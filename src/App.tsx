@@ -20,10 +20,10 @@ function App() {
       <TransitionGroup>
         <CSSTransition key={currentHeader} timeout={300} classNames="fade">
           <div>
-            {currentHeader == Headers.Home && <HomePage />}
-            {currentHeader == Headers.AboutMe && <AboutMePage />}
-            {currentHeader == Headers.Projects && <ProjectPage />}
-            {currentHeader == Headers.Contact && <ContactPage />}
+            {currentHeader === Headers.Home && <HomePage />}
+            {currentHeader === Headers.AboutMe && <AboutMePage />}
+            {currentHeader === Headers.Projects && <ProjectPage />}
+            {currentHeader === Headers.Contact && <ContactPage />}
           </div>
         </CSSTransition>
       </TransitionGroup>
