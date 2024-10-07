@@ -12,6 +12,7 @@
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
   transform: none;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .project-parent:hover{
@@ -36,7 +37,7 @@
 
 .project-title {
   position: absolute;
-  bottom: 5em;
+  bottom: 5.3em;
   left: 50%;
   transform: translatex(-50%);
   font-weight: 700;
@@ -57,5 +58,6 @@
   width: 3em;
   height: 3em;
   margin-left: 1em;
+  object-fit: fit;
 }
 

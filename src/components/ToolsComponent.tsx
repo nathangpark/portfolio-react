@@ -3,6 +3,7 @@ export enum Tools {
   TypeScriptX = "tsx",
   Python = "python",
   LaTeX = "latex",
+  Vite = "vite"
 }
 
 interface Props {
@@ -10,8 +11,9 @@ interface Props {
 }
 
 const srcReact = "./react.svg";
-const srcTSX = "";
-const srcPy = "";
+const srcTSX = "Typescript_logo_2020.svg";
+const srcVite = "./vite.svg";
+const srcPy = "./python-logo-only.svg";
 const srcTex = "";
 
 const ToolsComponent = ({ tool }:Props) => {
@@ -29,6 +31,9 @@ const ToolsComponent = ({ tool }:Props) => {
     case Tools.LaTeX:
       src = srcTex;
       break;
+    case Tools.Vite:
+        src = srcVite;
+        break;
     default:
       src = "";        
   }
