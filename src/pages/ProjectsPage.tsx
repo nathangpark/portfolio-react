@@ -12,11 +12,13 @@ const ProjectPage = () => {
           projectTitle="2D Plotter"
           srcImage="./plotter.png"
           toolsUsed={[Tools.Python]}
+          link="https://github.com/nathangpark/plotter-python/tree/main"
         />
         <ProjectComponent
           projectTitle="Poker"
           srcImage="./PokerBackground.png"
           toolsUsed={[Tools.React, Tools.Vite, Tools.TypeScriptX]}
+          link="https://github.com/nathangpark/poker-react"
         />
       </div>
     </div>
