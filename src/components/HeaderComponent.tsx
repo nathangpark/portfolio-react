@@ -1,7 +1,7 @@
 import { MouseEvent, useState } from "react";
 
 export enum Headers {
-  Home = "Homes",
+  Home = "Home",
   AboutMe = "About Me",
   Projects = "Projects",
   Contact = "Contact",
