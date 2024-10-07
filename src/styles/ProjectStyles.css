@@ -1,0 +1,63 @@
+.projects-container {
+  display: flex;
+}
+
+.project-parent {
+  position: relative;
+  width: 20em;
+  height: 15em;
+  overflow: hidden;
+  border-radius: 2em;
+  margin-left: 3em;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  transform: none;
+  transition: transform 0.3s ease;
+}
+
+.project-parent:hover{
+  transform: translateY(-5%);
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.project-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  background-color: rgb(255, 255, 255)
+}
+
+.project-title {
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  transform: translatex(-50%);
+  font-weight: 700;
+  color:rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.tool-container {
+  position:absolute;
+  bottom: 1em;
+  width: 100%;
+  z-index: 2;
+}
+
+.tool-image {
+  border: 0.1em solid rgba(255, 255, 255, 0.167);
+  background-color:rgb(24, 24, 26);
+  border-radius: 0.7em;
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+}
+

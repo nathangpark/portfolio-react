@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  padding-right: 1em;
+}
+
+.header-list-item {
+  width: fit-content;
+  font-weight: 600;
+}
+
+.header-list-item:hover {
+  cursor:pointer
+}
+
+.selected-header-list-item {
+  text-decoration:underline
+}
