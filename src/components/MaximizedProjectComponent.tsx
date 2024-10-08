@@ -14,18 +14,32 @@ const MaximizedProjectComponent = ({ projectType, onProjectClick }: Props) => {
         className="maximized-project-background"
         onClick={() => onProjectClick(projectType)}
       />
-      <div className="maximized-project-parent">
-        <img src={project.getProjectImg()} className="maximized-project-img" />
-        {project.getToolsUsed().map((item) => (
-          <ToolsComponent key={item} tool={item}></ToolsComponent>
-        ))}
+      <div className="maximized-project-parent themed">
+        <img
+          src={project.getProjectImg()}
+          className="maximized-project-image"
+        />
+        <div className="maximized-project-tools-container">
+          {project.getToolsUsed().map((item) => (
+            <ToolsComponent key={item} tool={item}></ToolsComponent>
+          ))}
+        </div>
         <h1 className="maximized-project-title">{project.getProjectTitle()}</h1>
         <p className="maximized-project-description">
-          Something something something
+          {project.getDescription()}
         </p>
         <a href={project.getGHLink()} target="_blank">
-          <img src="./github-mark-white.svg"/>
+          <img
+            src="./github-mark-white.svg"
+            className="maximized-project-github"
+          />
         </a>
+        <h1
+          className="maximized-close-button"
+          onClick={() => onProjectClick(projectType)}
+        >
+          X
+        </h1>
       </div>
     </>
   );

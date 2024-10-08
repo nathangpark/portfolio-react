@@ -1,8 +1,8 @@
 .projects-container {
   position:relative;
   display: grid;
-  margin-left: 3em;
-  width: 100%;
+  margin-left:5%;
+  width: 95%;
   height: 15em;
   max-width: 100em;
   position: relative;
@@ -76,13 +76,16 @@
 
 .maximized-project-parent {
   position: absolute;
-  top:0;
+  display:flex;
+  top:5%;
   left: 50%;
   transform:translateX(-50%);
 
-  width: 50em;
-  height: 25em;
-  overflow: hidden;
+  width: 80%;
+  min-height: 80%;
+  height: auto;
+
+  overflow: auto;
   border-radius: 2em;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -92,7 +95,61 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 20%;
+  height: 25%;
   object-fit: cover;
 }
 
+.maximized-project-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translatex(-50%);
+  font-weight: 700;
+}
+
+.maximized-project-description {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  min-height: 20%;
+  height: auto;
+  transform: translatex(-50%);
+  overflow:auto;
+}
+
+.maximized-project-tools-container {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  margin: 1em;
+}
+
+.maximized-project-github {
+  position: absolute;
+  width: 2.4em;
+  height: 2.4em;
+  top: 0%;
+  left:0;
+  margin:1em;
+  background-color: #242424;
+  border-radius: 0.8em;
+  border: 0.3em solid #242424;
+}
+
+.maximized-close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.5em;
+  font-size: 2em;
+  background-color: #2424249b;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  align-self: center;
+  padding:0;
+  color:rgba(255, 255, 255, 0.474);
+  border-radius: 1em;
+  cursor:pointer;
+}

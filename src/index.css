@@ -14,12 +14,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.themed {
+  background-color: #242424;
+}
 
+.themed-invert {
+  background-color: #ffffff;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
+  }
+  .themed {
+    background-color: #ffffff;
+  }
+  .themed-invert {
+    background-color: #242424;
   }
   a {
     color: #213547;
