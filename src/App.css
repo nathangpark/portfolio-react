@@ -3,18 +3,21 @@
 }
 .fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in 300ms;
+  transition: opacity 200ms ease-in 100ms;
 }
 .fade-exit {
   opacity: 1;
 }
 .fade-exit-active {
   opacity: 0;
-  transition: opacity 300ms ease-out;
+  transition: opacity 200ms ease-out;
 }
+
 
 .page {
   position:absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .page-header {

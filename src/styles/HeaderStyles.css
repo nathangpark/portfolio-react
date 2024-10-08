@@ -15,5 +15,5 @@
 }
 
 .selected-header-list-item {
-  text-decoration:underline
+  font-weight: 700;
 }

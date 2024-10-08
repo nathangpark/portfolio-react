@@ -2,25 +2,45 @@ import ProjectComponent from "../components/ProjectComponent";
 import "./../styles/ProjectStyles.css";
 
 import { Tools } from "../components/ToolsComponent";
+import { Project, Projects } from "../classes/Project";
+import { useState } from "react";
+import MaximizedProjectComponent from "../components/MaximizedProjectComponent";
 
 const ProjectPage = () => {
+  const [isMaximized, setIsMaximized] = useState(false);
+  const [maximizedProject, setMaximizedProject] = useState(Projects.None);
+
+  const onProjectClick = (projectType:Projects) => {
+    if (isMaximized) {
+      setIsMaximized(false);
+    } else {
+      setIsMaximized(true);
+      setMaximizedProject(projectType);
+    } 
+  }
+
   return (
     <div className="page">
       <h1 className="page-header">Projects</h1>
       <div className="projects-container">
         <ProjectComponent
-          projectTitle="2D Plotter"
-          srcImage="./plotter.png"
-          toolsUsed={[Tools.Python]}
-          link="https://github.com/nathangpark/plotter-python/tree/main"
+          projectType={Projects.Plotter}
+          onProjectClick={onProjectClick}
         />
         <ProjectComponent
-          projectTitle="Poker"
-          srcImage="./PokerBackground.png"
-          toolsUsed={[Tools.React, Tools.Vite, Tools.TypeScriptX]}
-          link="https://github.com/nathangpark/poker-react"
+          projectType={Projects.Poker}
+          onProjectClick={onProjectClick}
+        />
+        <ProjectComponent
+          projectType={Projects.Plotter}
+          onProjectClick={onProjectClick}
+        />
+        <ProjectComponent
+          projectType={Projects.Poker}
+          onProjectClick={onProjectClick}
         />
       </div>
+      {isMaximized && (<MaximizedProjectComponent projectType={maximizedProject} onProjectClick={onProjectClick}></MaximizedProjectComponent>)}
     </div>
   );
 };

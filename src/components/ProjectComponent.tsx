@@ -1,28 +1,31 @@
+import { Project, Projects } from "../classes/Project";
 import { Tools } from "./ToolsComponent";
 import ToolsComponent from "./ToolsComponent";
 
 interface Props {
-  projectTitle: string,
-  srcImage: string,
-  toolsUsed: Tools[],
-  link: string,
+  projectType: Projects,
+  onProjectClick: (projectType : Projects) => void
 }
 
-const ProjectComponent = ({ projectTitle, srcImage, toolsUsed,link }: Props) => {
+const ProjectComponent = ({
+  projectType,
+  onProjectClick,
+}: Props) => {
+
+  let project = new Project(projectType);
+
   return (
-    <a href={link} target="_blank">
-      <div className="project-parent">
-        <img className="project-image" src={srcImage}/>
-        <div className="project-title">{projectTitle}</div>
-        <div className="project-bottom"/>
-        <div className="tool-container">
-          {toolsUsed.map((item) => (
-            <ToolsComponent tool={item}></ToolsComponent>
-          ))}
-        </div>
+    <div className="project-parent" onClick={()=> onProjectClick(projectType)}>
+      <img className="project-image" src={project.getProjectImg()} />
+      <div className="project-title">{project.getProjectTitle()}</div>
+      <div className="project-bottom" />
+      <div className="tool-container">
+        {project.getToolsUsed().map((item) => (
+          <ToolsComponent key={item} tool={item}></ToolsComponent>
+        ))}
       </div>
-    </a>
-  )
-}
+    </div>
+  );
+};
 
 export default ProjectComponent;
