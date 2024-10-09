@@ -27,7 +27,7 @@ const HeaderComponent = ({ onSelectItem }: Props) => {
   };
 
   return (
-    <div className="header">
+    <div className="header themed">
       {items.map((item, index) => (
         <div
           className={

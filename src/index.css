@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(255, 240, 249);
+  background-color: #29283c;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,25 +14,41 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.themed {
-  background-color: #242424;
+h1, h2, h3,p,ul {
+  margin: 0em;
+  margin-top: 0.4em;
 }
 
-.themed-invert {
-  background-color: #ffffff;
+h1 {
+  margin-top: 0.5em;
+}
+
+.themed {
+  background-color: #29283c;
+}
+
+.themed-light {
+  background-color: #3e3d4d;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #113672;
+    background-color: #fff7f1;
   }
   .themed {
-    background-color: #ffffff;
+    background-color: #fff7f1;
   }
-  .themed-invert {
-    background-color: #242424;
+
+  .themed-light {
+    background-color: #eadfd6;
   }
+
   a {
     color: #213547;
   }

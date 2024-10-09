@@ -1,0 +1,13 @@
+.home-text {
+  display: flex;
+  position:absolute;
+  left: 50%;
+  top: 30%;
+  font-weight: 500;
+  gap: 0.3em;
+  transform: translateX(-50%);
+}
+
+.home-name {
+  font-weight: 800;
+}

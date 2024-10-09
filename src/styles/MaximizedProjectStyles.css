@@ -1,0 +1,119 @@
+.maximized-project-background {
+
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(1px);
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events:all;
+}
+
+.maximized-project-parent {
+  position: fixed;
+  display:flex;
+  top:10%;
+  left: 50%;
+  transform:translateX(-50%);
+
+  width: 80%;
+  min-height: 80%;
+  height: auto;
+
+  overflow: hidden;
+  border-radius: 2em;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  pointer-events:all;
+}
+
+.maximized-project-scrollable {
+  position:fixed;
+  left:0%;
+  top:0;
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  overflow: auto;
+}
+
+
+.maximized-project-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 15%;
+  object-fit: cover;
+}
+
+.maximized-project-title {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translatex(-50%);
+  font-weight: 700;
+  width:fit-content;
+}
+
+.maximized-project-description {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  width: 90%;
+  max-width: 60em;
+  min-height: 20%;
+  height: auto;
+  transform: translatex(-50%);
+  overflow:auto;
+  padding-left:2em;
+  padding-right:2em;
+  padding-bottom: 2em;
+}
+
+.maximized-project-tools-container {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  margin: 1em;
+}
+
+.maximized-project-github {
+  position: absolute;
+  width: 2.4em;
+  height: 2.4em;
+  top: 1em;
+  left:1em;
+  background-color: #242424;
+  border-radius: 0.8em;
+  border: 0.3em solid #242424;
+  transition: transform 0.3s;
+}
+
+.maximized-project-github:hover {
+  transform: translateY(-5%);
+}
+
+.maximized-close-button {
+  position: absolute;
+  right: 1.2em;
+  top: 0.4em;
+
+  font-size: 1em;
+  background-color: #2424249b;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  align-self: center;
+  padding:0;
+  color:rgba(255, 255, 255, 0.474);
+  border-radius: 1em;
+  cursor:pointer;
+
+  transition: transform 0.3s;
+}
+
+.maximized-close-button:hover {
+  transform: translateY(-5%);
+}

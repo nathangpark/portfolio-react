@@ -3,7 +3,10 @@ export enum Tools {
   TypeScriptX = "tsx",
   Python = "python",
   LaTeX = "latex",
-  Vite = "vite"
+  Vite = "vite",
+  HTML = "HTML",
+  CSS = "CSS",
+  JavaScript = "javascript"
 }
 
 interface Props {
@@ -14,6 +17,9 @@ const srcReact = "./react.svg";
 const srcTSX = "Typescript_logo_2020.svg";
 const srcVite = "./vite.svg";
 const srcPy = "./python-logo-only.svg";
+const srcHTML = "./HTML5_logo_and_wordmark.svg";
+const srcCSS = "./CSS3_logo_and_wordmark.svg";
+const srcJS = "./JavaScript-logo.png"
 const srcTex = "";
 
 const ToolsComponent = ({ tool }:Props) => {
@@ -32,8 +38,17 @@ const ToolsComponent = ({ tool }:Props) => {
       src = srcTex;
       break;
     case Tools.Vite:
-        src = srcVite;
-        break;
+      src = srcVite;
+      break;
+    case Tools.HTML:
+      src = srcHTML;
+      break;
+    case Tools.CSS:
+      src = srcCSS;
+      break;
+    case Tools.JavaScript:
+      src = srcJS;
+      break;    
     default:
       src = "";        
   }

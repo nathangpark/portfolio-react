@@ -37,7 +37,6 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderComponent onSelectItem={setCurrentHeader} />
       <TransitionGroup>
         <CSSTransition key={currentHeader} timeout={200} classNames="fade" nodeRef={getNodeRef()}>
           <div ref={getNodeRef()} key={currentHeader}>
@@ -48,6 +47,7 @@ function App() {
           </div>
         </CSSTransition>
       </TransitionGroup>
+      <HeaderComponent onSelectItem={setCurrentHeader} />
     </div>
   );
 }
