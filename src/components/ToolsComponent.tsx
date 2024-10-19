@@ -6,7 +6,8 @@ export enum Tools {
   Vite = "vite",
   HTML = "HTML",
   CSS = "CSS",
-  JavaScript = "javascript"
+  JavaScript = "javascript",
+  Java = "Java"
 }
 
 interface Props {
@@ -20,6 +21,7 @@ const srcPy = "./python-logo-only.svg";
 const srcHTML = "./HTML5_logo_and_wordmark.svg";
 const srcCSS = "./CSS3_logo_and_wordmark.svg";
 const srcJS = "./JavaScript-logo.png"
+const srcJava = "./Java_programming_language_logo.svg"
 const srcTex = "";
 
 const ToolsComponent = ({ tool }:Props) => {
@@ -49,6 +51,9 @@ const ToolsComponent = ({ tool }:Props) => {
     case Tools.JavaScript:
       src = srcJS;
       break;    
+    case Tools.Java:
+      src = srcJava;
+      break;  
     default:
       src = "";        
   }

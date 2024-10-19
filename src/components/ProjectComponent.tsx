@@ -24,6 +24,9 @@ const ProjectComponent = ({
           <ToolsComponent key={item} tool={item}></ToolsComponent>
         ))}
       </div>
+      <div className="project-date themed">
+        {project.getDate()}
+      </div>
     </div>
   );
 };

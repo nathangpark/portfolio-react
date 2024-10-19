@@ -44,42 +44,7 @@ const ProjectPage = () => {
           onProjectClick={onProjectClick}
         />
         <ProjectComponent
-          projectType={Projects.Plotter}
-          onProjectClick={onProjectClick}
-        />
-         <ProjectComponent
-          projectType={Projects.Poker}
-          onProjectClick={onProjectClick}
-        />
-        <ProjectComponent
-          projectType={Projects.Platformer}
-          onProjectClick={onProjectClick}
-        />  
-      </div>
-      <h1 className="projects-container-title">Recent Projects</h1>
-      <div className="projects-container themed-light">
-        <ProjectComponent
-          projectType={Projects.Plotter}
-          onProjectClick={onProjectClick}
-        />
-        <ProjectComponent
-          projectType={Projects.Poker}
-          onProjectClick={onProjectClick}
-        />
-        <ProjectComponent
-          projectType={Projects.Platformer}
-          onProjectClick={onProjectClick}
-        />
-        <ProjectComponent
-          projectType={Projects.Plotter}
-          onProjectClick={onProjectClick}
-        />
-         <ProjectComponent
-          projectType={Projects.Poker}
-          onProjectClick={onProjectClick}
-        />
-        <ProjectComponent
-          projectType={Projects.Platformer}
+          projectType={Projects.TicTacToe}
           onProjectClick={onProjectClick}
         />  
       </div>

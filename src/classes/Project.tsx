@@ -2,9 +2,11 @@ import { ReactElement } from "react";
 import { Tools } from "../components/ToolsComponent";
 
 export enum Projects {
+  Portfolio = "Portfolio",
   Poker = "Poker",
   Plotter = "Plotter",
   Platformer = "Platformer",
+  TicTacToe = "Tic-Tac-Toe",
   None = "not to be displayed",
 }
 
@@ -72,10 +74,10 @@ export class Project {
               including its circuitry and software using a Raspberry Pi (RP4).
             </p>
             <h3>Role</h3>
-            <p>Lead Software Engineer</p>
             <ul>
               <li>
                 Acted as lead software engineer, but worked closely with the circuitry team to design a cohesive product.
+                All team members were involved with every aspect of the project.
               </li>
               <li>
                 Constructed 14 efficient Python classes with clear organization, consistent naming, and optimized for RP4 per
@@ -105,6 +107,14 @@ export class Project {
               <li>Stepper Motors</li>
               <li>Rotary Encoders</li>
             </ul>
+            <p>
+              The following are hardware components built by the team:
+            </p>
+            <ul>
+              <li>Analog to digital converter</li>
+              <li>Stepper motor wiring with H-bridges</li>
+              <li>Power Supply</li>
+            </ul>  
             <p>To see demonstration videos, click <a href="https://www.youtube.com/watch?v=Q5JhgT3V5Lg&list=PL-ZNuBf7N98oXJAFyI3xNzuR_te0wGc8-&index=5" target="_blank">Here</a></p>
           </>
         );
@@ -132,6 +142,30 @@ export class Project {
               Play the game <a href="https://nathangpark.github.io/platformer-js/" target="_blank">HERE</a>
               , or, to start from the game section, click <a href="https://nathangpark.github.io/platformer-js/platformer.html" target="_blank">HERE</a>
               </p>
+          </>
+        );
+        break;
+      case Projects.TicTacToe:
+        this.projectTitle = "Tic-Tac-Toe";
+        this.imgHead = "./tictactoe.png";
+        this.toolsUsed = [Tools.JavaScript, Tools.HTML, Tools.CSS];
+        this.ghLink = "https://github.com/nathangpark/tictactoe-js";
+        this.date = "October 2022";
+        this.description = (
+          <>
+            <h1>{this.projectTitle}</h1>
+            <p>{this.date}</p>
+            <h3>Description</h3>
+            <p>Simple tic-tac-toe game made entirely from scratch with JavaScript and HTML/CSS.</p>
+            <ul>
+              <li>Winner calculation</li>
+              <li>Win screen</li>
+              <li>Complex styling</li>
+            </ul>
+            <h3>Play the game!</h3>
+            <p>
+              Play the game <a href="https://nathangpark.github.io/tictactoe-js/" target="_blank">HERE</a>
+            </p>
           </>
         );
         break;

@@ -99,6 +99,22 @@
   object-fit: fit;
 }
 
+.project-date {
+  position:absolute;
+  height: fit-content;
+  width: fit-content;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  opacity: 0.9;
+  font-weight: 800;
+  border-bottom-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+  padding:0.3em;
+  padding-bottom: 0.2em;
+  padding-top: 0;
+}
+
 @media (prefers-color-scheme: light) {
   .project-parent {
     box-shadow: 5px 10px 20px rgb(18, 33, 55,0.4);
