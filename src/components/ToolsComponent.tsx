@@ -58,8 +58,11 @@ const ToolsComponent = ({ tool }:Props) => {
       src = "";        
   }
 
+ let className= "tool-image";
+ className += tool == Tools.React ? + " react-image" : ""
+
   return (
-    <img className="tool-image" src={src} alt={tool}/>
+    <img className={className} src={src} alt={tool}/>
   )
 }
 

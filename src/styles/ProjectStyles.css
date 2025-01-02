@@ -42,7 +42,7 @@
   overflow: clip;
   border-radius: 2rem;
   box-shadow: 10px 10px 10px rgba(31, 30, 37, 0.5);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
@@ -124,5 +124,11 @@
     }
   .project-bottom {
     background-color: #fff7f1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-image {
+    animation: logo-spin infinite 20s linear;
   }
 }

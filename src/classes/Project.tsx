@@ -7,6 +7,7 @@ export enum Projects {
   Plotter = "Plotter",
   Platformer = "Platformer",
   TicTacToe = "Tic-Tac-Toe",
+  Wordle = "Wordle",
   None = "not to be displayed",
 }
 
@@ -23,6 +24,33 @@ export class Project {
     this.project = project;
 
     switch (project) {
+      case Projects.Wordle:
+        this.projectTitle = "Wordle";
+        this.imgHead = "./WordleBackground.png";
+        this.toolsUsed = [Tools.React, Tools.Vite, Tools.TypeScriptX];
+        this.ghLink = "https://github.com/nathangpark/wordle-react";
+        this.date = "October 2024";
+        this.description = (
+          <>
+          <h1>{this.projectTitle}</h1>
+          <p>Replica of the classic word game "Wordle", made using React and TypeScript.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Light mode and dark mode (browser preference)</li>
+            <li>Word submission check algorithm</li>
+            <li>Randomized words, infinitely replayable</li>
+            <li>Difficulty tuned</li>
+            <li>Score and streak display</li>
+            <li>Virtual keyboard</li>
+            <li>Display scaling</li>
+          </ul>
+          <p>
+            Play the game{" "}
+            <a href="https://nathangpark.github.io/poker-react/" target="_blank">HERE</a>
+          </p>
+          </>
+        );
+        break;
       case Projects.Poker:
         this.projectTitle = "Poker";
         this.imgHead = "./PokerBackground.png";

@@ -32,6 +32,10 @@ const ProjectPage = () => {
       <h1 className="projects-container-title">Top Projects</h1>
       <div className="projects-container themed-light">
         <ProjectComponent
+          projectType={Projects.Wordle}
+          onProjectClick={onProjectClick}
+        />
+        <ProjectComponent
           projectType={Projects.Plotter}
           onProjectClick={onProjectClick}
         />
