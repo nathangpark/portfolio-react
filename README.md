@@ -7,3 +7,4 @@ Features my top projects, displayed on the "Projects" page of the webpage. Inclu
 - 2D Plotter
 - Older projects
 
+View the webpage at: [nathangpark.github.io/portfolio-react](https://nathangpark.github.io/portfolio-react/)
