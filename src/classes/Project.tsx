@@ -46,7 +46,7 @@ export class Project {
           </ul>
           <p>
             Play the game{" "}
-            <a href="https://nathangpark.github.io/poker-react/" target="_blank">HERE</a>
+            <a href="https://nathangpark.github.io/wordle-react/" target="_blank">HERE</a>
           </p>
           </>
         );
